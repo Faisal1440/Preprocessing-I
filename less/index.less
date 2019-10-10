@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +55,94 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background: cornsilk;
+
 }
+
+html {
+	font-size: 62.5%;
+}
+
+// MIXIN//
+.flex(){
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.padding (){
+	padding: 5px;
+}
+
+//varable//
+
+@header: 2.1rem;
+@paragraph: 1.9rem;
+
+
+body{
+	margin: 20px 10px;
+
+
+
+div {
+	border: 2px solid black;
+	margin: 20px 0px;
+
+	h1 {
+		font-size:@header;
+		.padding();
+	}
+
+	p {
+		font-size:@paragraph;
+		.padding();
+	}
+	ul {
+		font-size: @paragraph;
+		.padding();
+	}
+
+	img {
+		width: 250px;
+		// @media (max-width:500px){
+		// 	border-radius: 20px;
+		// }
+	}
+}  
+
+nav{
+	.flex();
+	margin: 20px 20px;
+	font-size: 2rem;
+	 
+	a {
+		text-decoration: none;
+		
+		@media (max-width:500px){
+			
+			border: 1px solid black;	
+
+		} // this closes media tag
+	} //this closes the a tag
+
+	
+
+}
+
+.twosec{
+	.flex();
+	margin: 20px 0px;
+	align-items: flex-start;
+
+	@media (max-width: 500px){
+		flex-direction: column-reverse;
+		align-items: center;
+
+		 
+	}
+}
+
+} //THIS CLOSES THE BODY 
 
