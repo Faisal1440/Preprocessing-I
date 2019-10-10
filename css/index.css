@@ -135,3 +135,56 @@ body {
   height: 100%;
   background: cornsilk;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 20px 10px;
+}
+body div {
+  border: 2px solid black;
+  margin: 20px 0px;
+}
+body div h1 {
+  font-size: 2.1rem;
+  padding: 5px;
+}
+body div p {
+  font-size: 1.9rem;
+  padding: 5px;
+}
+body div ul {
+  font-size: 1.9rem;
+  padding: 5px;
+}
+body div img {
+  width: 250px;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+  font-size: 2rem;
+}
+body nav a {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  body nav a {
+    border: 1px solid black;
+  }
+}
+body .twosec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  body .twosec {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
